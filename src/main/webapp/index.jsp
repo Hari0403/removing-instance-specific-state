@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<h1>Welcome to the PAL session lab</h1>
+<h1>Welcome to the PAL session lab Test</h1>
 <h2>Please login below:</h2>
 
 <form action="login" method="post">
@@ -23,6 +23,6 @@
 
     <input type="submit" value="Login">
 </form>
-Instance number: <%= System.getProperty("instanceNumber") %>
+Instance number: <%= System.getenv("CF_INSTANCE_INDEX") %>
 </body>
 </html>
